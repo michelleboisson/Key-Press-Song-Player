@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+        <title>Broadway Prototype</title>
+ 
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        
+        <style>
+        	#key {
+	        	background-color: #aaaaaa;
+	        	border-radius: 12px;
+	        	color: #FFF;
+	        	font-size: x-large;
+	        	text-transform: uppercase;
+	        	width: 124px;
+	        	margin: 100px auto;
+	        	text-align: center;
+	        	padding: 10px;
+	        	opacity: 1;
+        	}
+        	#pause{
+	        	position: absolute;
+	        	top: 10;
+	        	right: 10;
+	        	background-color: #aaaaaa;
+	        	width: 100px;
+	        	color: #FFF;
+	        	font-size: small;
+        	}
+        </style>
+ 
+   </head>
+  
+  <body>
+
+	  <div class="container-fluid">
+	  
+	  
+	  	<div id="pause">play</div>
+	  	
+	  	<audio controls="controls" id="thissong">
+		  	<source src="" type="audio/mpeg" />
+		  	Your browser does not support the audio element.
+		</audio>
+	  
+	  
+	  
+	  <div id="key-container" class="row">
+	  	<div id="key">
+	  		
+	  		<img src="imgs/step.jpg" alt="step" width="124" height="124">
+	  		
+	  		
+	  	</div>	
+	  	
+	  	
+	  </div>
+	  
+	  </div><!--end container -->
+
+
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/popcorn-complete.min.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  <script type="text/javascript">
+  
+  $(document).ready(function(){
+	  Player.Init();
+	  
+  });
+  
+  </script>
+
+  </body>
+</html>
